@@ -96,6 +96,7 @@ a:focus-visible,button:focus-visible{
   display:flex;align-items:center;gap:10px;
   font-weight:800;font-size:19px;color:var(--navy-deep);
 }
+.brandmark__logo{height:40px;width:auto;flex-shrink:0;}
 .brandmark small{
   display:block;font-family:var(--font-mono);font-weight:500;
   font-size:10px;letter-spacing:.12em;color:var(--ink-soft);text-transform:uppercase;
@@ -294,6 +295,16 @@ html[lang="ar"] .cta-band{display:flex;}
 html[lang="ar"] .nav{display:flex;}
 html[lang="ar"] .site-header{display:block;}
 html[lang="ar"] .brandmark{display:flex;}
+
+/* ---------------- Legal document layout ---------------- */
+.legal{max-width:74ch;margin:0 auto;}
+.legal h2{font-size:20px;font-weight:800;margin:38px 0 12px;color:var(--navy-deep);}
+.legal h2:first-child{margin-top:0;}
+.legal p{font-size:15.5px;color:var(--ink-soft);margin-bottom:12px;}
+.legal ul{margin:8px 0 16px;padding-inline-start:22px;list-style:disc;}
+.legal ul li{font-size:15px;color:var(--ink-soft);margin-bottom:6px;line-height:1.6;}
+.legal .legal-meta{font-family:var(--font-mono);font-size:13px;color:var(--ink-soft);margin-bottom:28px;}
+.legal .legal-footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-soft);}
 
 /* Responsive */
 @media (max-width:900px){
