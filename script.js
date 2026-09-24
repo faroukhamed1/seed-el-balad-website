@@ -48,3 +48,13 @@
     });
   });
 })();
+
+// OpenAI Ads: track WhatsApp clicks as lead_created
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]');
+  if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (/wa\.me|whatsapp\.com|^whatsapp:/i.test(h) && typeof window.oaiq === 'function') {
+    window.oaiq('measure', 'lead_created', { type: 'customer_action' });
+  }
+}, true);
